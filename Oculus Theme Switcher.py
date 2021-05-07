@@ -47,27 +47,6 @@ option = int(input('Choose a dashboard option then hit enter: \n1. Gray with dot
 
 choice = options.get(option)
 
-# if choice == 'restore':
-#     if not updated:
-#         print('Restoring original configuration from backup...')
-#         backups = os.listdir(os.path.join(wd, 'Oculus Dash Backups'))
-#         try:
-#             for idx, file in enumerate(files):
-#                 os.remove(os.path.join(path, file))
-#                 shutil.copy(os.path.join(wd, 'Oculus Dash Backups', backups[idx]))
-#             settings["current_setting"] = 4
-#             with open('settings.json', 'w') as f:
-#                 json.dump(settings, f, indent=2)
-#         except PermissionError:
-#             print('Encountered a permission error, please run this program in administrator mode.')
-#             time.sleep(5)
-#             exit()
-#
-#     else:
-#         print('Restoration from backup not necessary, files are already in their default configuration after a client update.')
-#         time.sleep(3)
-#         exit()
-
 
 if not choice:
     if not updated:
